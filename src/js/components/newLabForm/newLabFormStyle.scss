@@ -1,0 +1,22 @@
+.newLabForm{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto auto;
+}
+
+.dates{
+  padding-left: 20px;
+}
+
+.newLabFormContainer{
+  font-family: "Open Sans",sans-serif;
+  flex: 1;
+  background-color: #F6F6F5;
+}
+.title{
+  font-weight: 600;
+}
+.btn{
+  margin-top: 10px;
+}
