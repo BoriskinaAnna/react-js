@@ -34,7 +34,10 @@ options.resources = {
             "time": "Time",
             "lecturer": "Lecturer",
             "place": "Place",
-            "duration": "Duration"
+            "duration": "Duration",
+            "logIn": "Log in",
+            "rememberMe": "Remember me",
+            "forgotPassword": "Forgot password ?"
         }
     },
     ru: {
@@ -54,7 +57,10 @@ options.resources = {
             "time": "Время",
             "lecturer": "Лектор",
             "place": "Место",
-            "duration": "Продолжительность"
+            "duration": "Продолжительность",
+            "logIn": "Вход",
+            "rememberMe": "Запомнить меня",
+            "forgotPassword": "Забыли пароль ?"
         }
     }
 };

@@ -6,7 +6,7 @@ import Header from 'js/components/header';
 import Footer from 'js/components/footer';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Authorization from 'js/components/authorization';
-import AddLabForm from 'js/components/addLabForm';
+import AddLabForm from 'js/components/newLabForm';
 import 'js/components/appStyle.scss';
 import Schedule from 'js/components/schedule/';
 import schedule from 'js/schedule.json';

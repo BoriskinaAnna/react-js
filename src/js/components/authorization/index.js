@@ -18,15 +18,21 @@ class Authorization extends Component {
                 className="Modal"
                 overlayClassName="Overlay"
             >
-                <div className="authorizationContainer form-control">
-                    <div className="authorizationContainer__content">
-                        <ModalWindowHeader close={closeLogin}/>
-                        <input className="form-control" placeholder={t('e-mail')}/>
-                        <input type="password" className="form-control" placeholder={t('password')}/>
-                        <button type="submit" className="btn btn-default">
-                            {t('btnAuthorization')}
-                        </button>
+                <div className="authorization">
+                    <ModalWindowHeader close={closeLogin}/>
+                    <h2 className="authorization__title">{t('logIn')}</h2>
+                    <input type="text" className="authorization__input"
+                           placeholder="Адрес электронной почты"/>
+                    <input type="password" className="authorization__input"
+                           placeholder="Пароль"/>
+                    <div className="authorization__rememberMe">
+                        <input type="checkbox" className="authorization__rememberMeCheckbox"/>
+                        <label>{t('rememberMe')}</label>
                     </div>
+                    <div className="authorization__forgotPassword">
+                        <a href="">{t('forgotPassword')}</a>
+                    </div>
+                    <button className="authorization__btnLogin" type="submit">{t('btnAuthorization')}</button>
                 </div>
              </Modal>
         )
