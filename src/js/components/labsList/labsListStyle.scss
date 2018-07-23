@@ -2,7 +2,9 @@
   background-color: #F6F6F5;
   cursor: pointer;
   flex: 1;
-
+  .lab-list__lab{
+    text-decoration: none;
+  }
   &__buttonAdd {
     display: flex;
     flex-direction: row-reverse;
@@ -16,9 +18,5 @@
       width: 30px;
       text-align: center;
     }
-  }
-
-  .lab-list__lab{
-    text-decoration: none;
   }
 }

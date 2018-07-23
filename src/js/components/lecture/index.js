@@ -43,7 +43,7 @@ class Index extends Component {
             <div className="lecture">
                 <div className="lecture__date">
                     <h3 className="lecture__day">
-                       {lecture.lectureDay}
+                        {lecture.lectureDay}
                     </h3>
                     <h4>
                         {lecture.lectureMonth}
@@ -70,9 +70,7 @@ class Index extends Component {
                     :
                     {place}
                 </div>
-                <button onClick={showChangeLecture}>
-                    \\
-                </button>
+                <button onClick={showChangeLecture} className="lecture__changeImage"/>
             </div>
         )
     }

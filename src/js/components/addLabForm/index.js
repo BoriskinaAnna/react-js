@@ -18,7 +18,7 @@ class LabForm extends Component {
                 className="Modal"
                 overlayClassName="Overlay"
             >
-                <div className="addLab">
+                <div className="addLab form-control">
                     <ModalWindowHeader close={closeAddLab}/>
                     <div>
                         <span className="addLab__blockTitle">{t('courseName')}</span>

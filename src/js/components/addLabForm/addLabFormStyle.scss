@@ -5,22 +5,22 @@
   transform: translate(-50%, -50%);
 
   .addLab{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    justify-content: space-between;
+     display: flex;
+     flex-direction: column;
+     width: 500px;
+     justify-content: space-between;
 
-    &__dates{
-      padding-left: 20px;
-    }
+     &__dates{
+       padding-left: 20px;
+     }
 
-    &__blockTitle{
-      font-weight: 600;
-    }
+     &__blockTitle{
+       font-weight: 600;
+     }
 
-    &__addBtn{
-      margin-top: 10px;
-    }
+     &__addBtn{
+       margin-top: 10px;
+     }
   }
 }
 

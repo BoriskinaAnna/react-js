@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import 'js/components/addLabForm/addLabFormStyle.scss';
+import 'js/components/changeLecture/changeLecture.scss';
 import {translate} from 'react-i18next';
 import Modal from 'react-modal';
 import ModalWindowHeader from 'js/components/modalWindowHeader';
@@ -15,43 +15,45 @@ class ChangeLecture extends Component {
             <Modal
                 isOpen={isAddLabShowed}
                 onRequestClose={closeAddLab}
-                className="Modal"
+                className="changeLectureModal"
                 overlayClassName="Overlay"
             >
-                <div className="changeLecture">
-                    <ModalWindowHeader close={closeAddLab}/>
-                    <div>
-                        <span className="addLab__blockTitle">{t('courseName')}</span>
-                        <input className="form-control"/>
-                    </div>
-                    <div>
-                        <span className="addLab__blockTitle">{t('trainingDate')}</span>
-                        <div className="addLab__dates">
-                            {t('start')}
-                            <input className="form-control"/>
-                            {t('end')}
-                            <input className="form-control"/>
+                <div className="changeLectureContainer">
+                    <div className="changeLecture">
+                        <ModalWindowHeader close={closeAddLab}/>
+                        <div>
+                            <div className="title">{t('courseName')}</div>
+                            <input className="input"/>
                         </div>
-                    </div>
-                    <div>
-                        <span className="addLab__blockTitle">{t('admissionDate')}</span>
-                        <div className="addLab__dates">
-                            {t('start')}
-                            <input className="form-control"/>
-                            {t('end')}
-                            <input className="form-control"/>
+
+                        <div className="bloc">
+                            <div>
+                                <div className="title">{t('time')}</div>
+                                <input className="input"/>
+
+                            </div>
+
+                            <div className="dates">
+
+                                <div className="title"> {t('duration')}</div>
+                                <input className="input"/>
+                            </div>
                         </div>
+
+
+                            <span className="title">{t('lecturer')}</span>
+                            <input className="input"/>
+
+
+
+                            <span className="title">{t('city')}</span>
+                            <input className="input"/>
+
+
+                        <button type="submit" className="btnSave">
+                            {t('add')}
+                        </button>
                     </div>
-                    <div>
-                        <span className="addLab__blockTitle">{t('city')}</span>
-                        <input className="form-control"/>
-                    </div>
-                    <div>
-                        <span className="addLab__blockTitle">{t('courseType')}</span>
-                        <input className="form-control"/>
-                    </div>
-                    <button type="submit" className="addLab__addBtn btn-default">
-                        {t('add')}</button>
                 </div>
             </Modal>
         )

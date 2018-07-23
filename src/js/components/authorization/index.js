@@ -15,20 +15,16 @@ class Authorization extends Component {
             <Modal
                 isOpen={isLoginShowed}
                 onRequestClose={closeLogin}
-                className="Modal"
+                className="authorizationModal"
                 overlayClassName="Overlay"
             >
                 <div className="authorization">
-                    <ModalWindowHeader close={closeLogin}/>
+                    <ModalWindowHeader close={closeLogin} className="modalWindowHeader"/>
                     <h2 className="authorization__title">{t('logIn')}</h2>
                     <input type="text" className="authorization__input"
-                           placeholder={t('e-mail')}/>
+                           placeholder="Адрес электронной почты"/>
                     <input type="password" className="authorization__input"
-                           placeholder={t('password')}/>
-                    <div className="authorization__rememberMe">
-                        <input type="checkbox" className="authorization__rememberMeCheckbox"/>
-                        <label>{t('rememberMe')}</label>
-                    </div>
+                           placeholder="Пароль"/>
                     <div className="authorization__forgotPassword">
                         <a href="">{t('forgotPassword')}</a>
                     </div>
