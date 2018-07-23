@@ -47,7 +47,7 @@ options.resources = {
             "admissionDate": "Набор на курсы",
             "trainingDate": "Даты обучения",
             "numbers": "Телефоны:",
-            "e-mail": "Электронная почта",
+            "e-mail": "Адрес электронной почты",
             "password": "Пароль",
             "courseName": "Название курсов",
             "start": "Начало",

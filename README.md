@@ -1,1 +1,0 @@
-# StudentsLab-ITechArt-Task

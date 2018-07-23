@@ -14,24 +14,29 @@ class Index extends Component {
     }
 
     showChange(){
-        this.setState({ isChange: true })
-        console.log('1');
+
+        debugger;
+
+        if(this.state.isChange){
+            this.props.lecture.lectureDuration = document.getElementsByClassName('changeDuration').value;
+        }
+        this.setState({ isChange: !this.state.isChange })
     }
 
     render() {
-        const {lecture, t} = this.props;
+        const {lecture, t, showChangeLecture} = this.props;
 
         const duration =  this.state.isChange ?
-            <input value={lecture.lectureDuration}/>:
+            <input className="changeDuration" defaultValue={lecture.lectureDuration}/>:
             <span className="lecture__duration">{lecture.lectureDuration}</span>;
         const time =  this.state.isChange ?
-            <input value={lecture.lectureTime}/>:
+            <input className="changeInputSmall" defaultValue={lecture.lectureTime}/>:
             <h5 className="lecture__time">{lecture.lectureTime}</h5>;
         const lecturer =  this.state.isChange ?
-            <input value={lecture.lectureLecturer}/>:
+            <input className="changeInputBig" defaultValue={lecture.lectureLecturer}/>:
             <h5 className="lecture__lecturer"> {lecture.lectureLecturer}</h5>;
         const place =  this.state.isChange ?
-            <input value={lecture.lecturePlace}/>:
+            <input className="changeInputSmall" defaultValue={lecture.lecturePlace}/>:
             <h5 className="lecture__place">{lecture.lecturePlace}</h5>;
 
         return (
@@ -65,7 +70,7 @@ class Index extends Component {
                     :
                     {place}
                 </div>
-                <button onClick={this.showChange}>
+                <button onClick={showChangeLecture}>
                     \\
                 </button>
             </div>

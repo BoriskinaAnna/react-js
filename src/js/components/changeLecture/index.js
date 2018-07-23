@@ -6,7 +6,7 @@ import ModalWindowHeader from 'js/components/modalWindowHeader';
 
 Modal.setAppElement('#content');
 
-class LabForm extends Component {
+class ChangeLecture extends Component {
 
     render() {
         const {t, isAddLabShowed, closeAddLab} = this.props;
@@ -18,7 +18,7 @@ class LabForm extends Component {
                 className="Modal"
                 overlayClassName="Overlay"
             >
-                <div className="addLab">
+                <div className="changeLecture">
                     <ModalWindowHeader close={closeAddLab}/>
                     <div>
                         <span className="addLab__blockTitle">{t('courseName')}</span>
@@ -57,4 +57,4 @@ class LabForm extends Component {
         )
     }
 }
-export default translate('translations')(LabForm)
+export default translate('translations')(ChangeLecture)

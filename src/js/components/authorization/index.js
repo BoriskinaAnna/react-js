@@ -22,9 +22,9 @@ class Authorization extends Component {
                     <ModalWindowHeader close={closeLogin}/>
                     <h2 className="authorization__title">{t('logIn')}</h2>
                     <input type="text" className="authorization__input"
-                           placeholder="Адрес электронной почты"/>
+                           placeholder={t('e-mail')}/>
                     <input type="password" className="authorization__input"
-                           placeholder="Пароль"/>
+                           placeholder={t('password')}/>
                     <div className="authorization__rememberMe">
                         <input type="checkbox" className="authorization__rememberMeCheckbox"/>
                         <label>{t('rememberMe')}</label>
